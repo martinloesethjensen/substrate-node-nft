@@ -3275,6 +3275,7 @@ dependencies = [
  "frame-system-benchmarking",
  "frame-system-rpc-runtime-api",
  "hex-literal",
+ "orml-nft",
  "pallet-aura",
  "pallet-balances",
  "pallet-grandpa",
@@ -3437,6 +3438,18 @@ name = "openssl-probe"
 version = "0.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "77af24da69f9d9341038eba93a073b1fdaaa1b788221b00a69bce9e762cb32de"
+
+[[package]]
+name = "orml-nft"
+version = "0.3.3-dev"
+source = "git+https://github.com/laminar-protocol/open-runtime-module-library.git#6427230e13d7a6170710c63d2b78cfbf950b7b18"
+dependencies = [
+ "frame-support",
+ "frame-system",
+ "parity-scale-codec",
+ "sp-runtime",
+ "sp-std",
+]
 
 [[package]]
 name = "owning_ref"
